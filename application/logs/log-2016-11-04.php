@@ -1,0 +1,47 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2016-11-04 19:27:18 --> Severity: Notice  --> Only variable references should be returned by reference C:\xampp\htdocs\codeigniter-master\system\core\Common.php 257
+ERROR - 2016-11-04 19:27:19 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\codeigniter-master\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2016-11-04 19:27:19 --> Unable to select database: codeigniter
+ERROR - 2016-11-04 19:29:50 --> Severity: Notice  --> Only variable references should be returned by reference C:\xampp\htdocs\codeigniter-master\system\core\Common.php 257
+ERROR - 2016-11-04 19:29:50 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\codeigniter-master\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2016-11-04 19:29:50 --> The session cookie data did not match what was expected. This could be a possible hacking attempt.
+ERROR - 2016-11-04 19:30:39 --> Severity: Notice  --> Only variable references should be returned by reference C:\xampp\htdocs\codeigniter-master\system\core\Common.php 257
+ERROR - 2016-11-04 19:30:39 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\codeigniter-master\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2016-11-04 19:32:05 --> Severity: Notice  --> Only variable references should be returned by reference C:\xampp\htdocs\codeigniter-master\system\core\Common.php 257
+ERROR - 2016-11-04 19:32:05 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\codeigniter-master\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2016-11-04 19:32:05 --> Severity: Notice  --> Only variable references should be returned by reference C:\xampp\htdocs\codeigniter-master\system\core\Common.php 257
+ERROR - 2016-11-04 19:32:05 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\codeigniter-master\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2016-11-04 19:32:15 --> Severity: Notice  --> Only variable references should be returned by reference C:\xampp\htdocs\codeigniter-master\system\core\Common.php 257
+ERROR - 2016-11-04 19:32:15 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\codeigniter-master\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2016-11-04 19:32:31 --> Severity: Notice  --> Only variable references should be returned by reference C:\xampp\htdocs\codeigniter-master\system\core\Common.php 257
+ERROR - 2016-11-04 19:32:31 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\codeigniter-master\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2016-11-04 19:32:31 --> Severity: Warning  --> fopen(/dev/urandom): failed to open stream: No such file or directory C:\xampp\htdocs\codeigniter-master\application\libraries\phpass-0.1\PasswordHash.php 49
+ERROR - 2016-11-04 19:32:32 --> Severity: Warning  --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() C:\xampp\htdocs\codeigniter-master\system\libraries\Email.php 1553
+ERROR - 2016-11-04 19:32:32 --> Severity: Notice  --> Only variable references should be returned by reference C:\xampp\htdocs\codeigniter-master\system\core\Common.php 257
+ERROR - 2016-11-04 19:32:32 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\codeigniter-master\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2016-11-04 19:33:08 --> Severity: Notice  --> Only variable references should be returned by reference C:\xampp\htdocs\codeigniter-master\system\core\Common.php 257
+ERROR - 2016-11-04 19:33:08 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\codeigniter-master\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2016-11-04 19:33:16 --> Severity: Notice  --> Only variable references should be returned by reference C:\xampp\htdocs\codeigniter-master\system\core\Common.php 257
+ERROR - 2016-11-04 19:33:16 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\codeigniter-master\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2016-11-04 19:33:16 --> Severity: Notice  --> Only variable references should be returned by reference C:\xampp\htdocs\codeigniter-master\system\core\Common.php 257
+ERROR - 2016-11-04 19:33:17 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\codeigniter-master\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2016-11-04 19:33:21 --> Severity: Notice  --> Only variable references should be returned by reference C:\xampp\htdocs\codeigniter-master\system\core\Common.php 257
+ERROR - 2016-11-04 19:33:21 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\codeigniter-master\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2016-11-04 19:33:22 --> Severity: Warning  --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() C:\xampp\htdocs\codeigniter-master\system\libraries\Email.php 1553
+ERROR - 2016-11-04 19:33:22 --> Severity: Notice  --> Only variable references should be returned by reference C:\xampp\htdocs\codeigniter-master\system\core\Common.php 257
+ERROR - 2016-11-04 19:33:22 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\codeigniter-master\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2016-11-04 20:19:38 --> Severity: Notice  --> Only variable references should be returned by reference C:\xampp\htdocs\codeigniter-master\system\core\Common.php 257
+ERROR - 2016-11-04 20:19:39 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\codeigniter-master\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2016-11-04 20:19:39 --> The session cookie data did not match what was expected. This could be a possible hacking attempt.
+ERROR - 2016-11-04 20:19:39 --> Severity: Notice  --> Only variable references should be returned by reference C:\xampp\htdocs\codeigniter-master\system\core\Common.php 257
+ERROR - 2016-11-04 20:19:40 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\codeigniter-master\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2016-11-04 20:19:50 --> Severity: Notice  --> Only variable references should be returned by reference C:\xampp\htdocs\codeigniter-master\system\core\Common.php 257
+ERROR - 2016-11-04 20:19:50 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\codeigniter-master\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2016-11-04 20:19:54 --> Severity: Notice  --> Only variable references should be returned by reference C:\xampp\htdocs\codeigniter-master\system\core\Common.php 257
+ERROR - 2016-11-04 20:19:54 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\codeigniter-master\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2016-11-04 20:19:58 --> Severity: Notice  --> Only variable references should be returned by reference C:\xampp\htdocs\codeigniter-master\system\core\Common.php 257
+ERROR - 2016-11-04 20:19:58 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\codeigniter-master\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2016-11-04 20:19:59 --> Severity: Warning  --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() C:\xampp\htdocs\codeigniter-master\system\libraries\Email.php 1553
+ERROR - 2016-11-04 20:19:59 --> Severity: Notice  --> Only variable references should be returned by reference C:\xampp\htdocs\codeigniter-master\system\core\Common.php 257
+ERROR - 2016-11-04 20:19:59 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\codeigniter-master\system\database\drivers\mysql\mysql_driver.php 91

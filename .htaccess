@@ -1,0 +1,35 @@
+##---------------------------------------
+# Activar RewriteEngine
+## --------------------------------------
+#
+#RewriteEngine on
+#
+## --------------------------------------
+## Eliminar index.php
+## --------------------------------------
+#
+#RewriteCond $1 !^(index\.php|robots\.txt|sitemap\.xml|assets|css|js|img|fonts|images|server|libs)
+#RewriteRule ^(.*)$ index.php/$1 [L]
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteBase /anunciatec2
+RewriteCond $1 !^(index\.php|public|\.txt)
+RewriteCond $1 !^(index\.php|robots\.txt|sitemap\.xml|assets|css|js|img|fonts)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?$1
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+ErrorDocument 404 /anunciatec2/index.php
+</IfModule>
+
+ ## Configuracion del mod rewrite para URL amigables
+# RewriteEngine On   
+#RewriteCond $1 !^(index\.php|robots\.txt|sitemap\.xml|assets|css|js|img|fonts|images|server|libs|captcha)
+# RewriteRule ^(.*)$ index.php?/$1 [L]
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^(.+)$ index.php?/$1 [L]
+# ErrorDocument 404 index.php

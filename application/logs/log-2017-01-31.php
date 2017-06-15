@@ -1,0 +1,22 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2017-01-31 16:34:30 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\anunciatec2\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-01-31 16:34:31 --> The session cookie data did not match what was expected. This could be a possible hacking attempt.
+ERROR - 2017-01-31 16:35:26 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\anunciatec2\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-01-31 16:35:30 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\anunciatec2\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-01-31 16:36:26 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\anunciatec2\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-01-31 16:36:29 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\anunciatec2\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-01-31 16:36:32 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\anunciatec2\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-01-31 16:36:35 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\anunciatec2\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-01-31 16:36:38 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\anunciatec2\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-01-31 16:36:49 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\anunciatec2\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-01-31 16:36:52 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\anunciatec2\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-01-31 16:36:55 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\anunciatec2\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-01-31 16:36:58 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\anunciatec2\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-01-31 16:36:58 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\anunciatec2\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-01-31 16:36:58 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\anunciatec2\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-01-31 16:36:58 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\anunciatec2\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-01-31 16:36:58 --> 404 Page Not Found --> Control_Usuario/124
+ERROR - 2017-01-31 16:37:03 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\anunciatec2\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-01-31 17:05:15 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\anunciatec2\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2017-01-31 17:05:15 --> The session cookie data did not match what was expected. This could be a possible hacking attempt.
