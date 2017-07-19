@@ -34,10 +34,25 @@ class Control_Dashuser extends CI_Controller {
         $data['contenido'] = $this->Model_Categorias->cargaanuncios();
 //        $data['user_id'] = $this->tank_auth->get_user_id();
         $data['username'] = $this->tank_auth->get_username();
+        //$this->load->view('plantillas/back_end/header',$data);
         $this->load->view('plantillas/back_end/header',$data);
-        $this->load->view('plantillas/back_end/sidebar',$data);
+        $this->load->view('plantillas/back_end/sidebarin',$data);
         $this->load->view('plantillas/back_end/contenido',$data);
         $this->load->view('plantillas/back_end/footer');
+    }
+    
+    public function dashboard() {
+        $id = $this->tank_auth->get_user_id();
+        $data['usuario'] = $this->Model_Categorias->buscausuario($id);
+
+        $data['contenido'] = $this->Model_Categorias->cargaanuncios();
+//        $data['user_id'] = $this->tank_auth->get_user_id();
+        $data['username'] = $this->tank_auth->get_username();
+        $data['stats'] = $this->Model_Usuario->stats($id);
+        $this->load->view('plantillas/back_end/headerin',$data);
+        $this->load->view('plantillas/back_end/sidebarin',$data);
+        $this->load->view('plantillas/back_end/dashboard');
+        $this->load->view('plantillas/back_end/footerin');
     }
 
     public function muestraCategorias() {
@@ -193,7 +208,7 @@ class Control_Dashuser extends CI_Controller {
         $id = $this->tank_auth->get_user_id();
         $data['usuario'] = $this->Model_Categorias->buscausuario($id);
         $this->load->view('plantillas/back_end/header', $data);
-        $this->load->view('plantillas/back_end/sidebar', $data);
+        $this->load->view('plantillas/back_end/sidebarin', $data);
         $this->load->view('back_end/empleados',$data);
         $this->load->view('plantillas/back_end/footer');
     }

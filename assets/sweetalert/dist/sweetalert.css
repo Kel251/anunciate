@@ -243,7 +243,7 @@ body.stop-scrolling {
   overflow: hidden;
   display: none;
   z-index: 2000;
-      border:solid 4px #337ab7;
+      /*border:solid 4px #337ab7;*/
 }
 @media all and (max-width: 767px) {
   .sweet-alert {

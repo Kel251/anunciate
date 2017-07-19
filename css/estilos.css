@@ -435,7 +435,7 @@ img .thumbnail
 
 .img-modal .modal-meta {
     position: relative;   
-    height: 96%;
+    height: 90%;
 }
 
 .img-modal .modal-meta-top {
@@ -744,9 +744,11 @@ Profile container */
     background-color: white;
 }
 /*Estilo del div en comentarios del anuncio*/
- #txtcoment{
+ .txtcoment{
      height:auto; 
      overflow:hidden;
+     word-wrap: break-word;
+     max-width:  306px;
  }
 
 /* PAGINADOR*/
@@ -830,4 +832,17 @@ Profile container */
     padding:3px 10px 3px 10px;
     border-radius: 6px;
     border: solid 1px #999999;
+}
+
+#contenedorforcoment{
+  display: inline-block;
+  width: 400px;
+  min-width: 100px;
+  height: 48px;
+  border: solid 1px #ccc;
+}
+
+#textoforcoment{
+  width: 100%;
+  height: 100%;
 }

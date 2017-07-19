@@ -121,8 +121,8 @@ Class Model_Usuario extends CI_Model {
 
     public function capturarImagen($id) {
         $this->db->select("Foto_perfil");
-        $this->db->where("Id_user", $id);
-        $this->db->from("cat_usuarios");
+        $this->db->where("id", $id);
+        $this->db->from("users");
         $resultado = $this->db->get();
         return $resultado->row();
     }
@@ -364,9 +364,14 @@ Class Model_Usuario extends CI_Model {
             $consulta = $this->db->query("CALL ubicacion1 ('$lat','$lng','$pos','$id',@result);");
         $resultadoalta = $this->db->query("SELECT @result AS resultado");
         return $resultadoalta->result();
-        
+
             
         }
     } 
+    
+    public function stats($id_user) {
+        $query = $this->db->query("SELECT COUNT(c.`Id_coment`) AS 'Total' FROM det_comentarios c INNER JOIN det_anuncios a ON c.id_anun = a.`Id_anun` INNER JOIN users u ON u.id = a.id WHERE u.id = $id_user");
+        return $query->result();
+    }
 
 }

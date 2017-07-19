@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <link rel="shortcut icon" href="<?php echo base_url(); ?>img/ico.ico">
         <title>Anunciate!</title>          
-       
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="description" content="">
@@ -13,11 +13,11 @@
 
         <script src="<?php echo base_url(); ?>js/jquery.js"></script>
         <script>//
-            var resizefunc = [];
+//            var resizefunc = [];
 //        </script>
-        <script src="<?php echo base_url(); ?>js/login.js"></script>
+        <!--<script src="?php echo base_url(); ?js/login.js"></script>-->
 
-        <script src="<?php echo base_url(); ?>js/bootstrap.min.js"></script>
+        <!--<script src="?php echo base_url(); ?>js/bootstrap.min.js"></script>-->
 
         <!-- Base Css Files -->
         <link href="<?php echo base_url() ?>assets/libs/jqueryui/ui-lightness/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" />
@@ -55,14 +55,12 @@
         <link rel="apple-touch-icon" sizes="144x144" href="<?php echo base_url() ?>assets/img/apple-touch-icon-144x144.png" />
         <link rel="apple-touch-icon" sizes="152x152" href="<?php echo base_url() ?>assets/img/apple-touch-icon-152x152.png" />        
 
-        <!-- Extra CSS Libraries Start -->
-        <link href="<?php echo base_url() ?>assets/libs/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" type="text/css" />
-        <link href="<?php echo base_url() ?>assets/libs/summernote/summernote.css" rel="stylesheet" type="text/css" />
-        
+        <!--         Extra CSS Libraries Start 
+                <link href="?php echo base_url() ?>assets/libs/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" type="text/css" />
+                <link href="?php echo base_url() ?>assets/libs/summernote/summernote.css" rel="stylesheet" type="text/css" />-->
+
         <!-- HOJA DE ESTILO DISEÑADA-->
         <link rel="stylesheet" href="<?php echo base_url(); ?>css/estilos.css" >
-
-        
         
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -71,40 +69,34 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
         <script type="text/javascript">
-function loadLocation () {
-	//inicializamos la funcion y definimos  el tiempo maximo ,las funciones de error y exito.
-	navigator.geolocation.getCurrentPosition(viewMap,ViewError,{timeout:1000});
-}
+            function loadLocation() {
+                //inicializamos la funcion y definimos  el tiempo maximo ,las funciones de error y exito.
+                navigator.geolocation.getCurrentPosition(viewMap, ViewError, {timeout: 1000});
+            }
 
 //Funcion de exito
-function viewMap (position) {	
-	var lon = position.coords.longitude;	//guardamos la longitud
-	var lat = position.coords.latitude;		//guardamos la latitud
+            function viewMap(position) {
+                var lon = position.coords.longitude;	//guardamos la longitud
+                var lat = position.coords.latitude;		//guardamos la latitud
 
-	var link = "http://maps.google.com/?ll="+lat+","+lon+"&z=14";
-	document.getElementById("long").innerHTML = "Longitud: "+lon;
-	document.getElementById("latitud").innerHTML = "Latitud: "+lat;
+                var link = "http://maps.google.com/?ll=" + lat + "," + lon + "&z=14";
+                document.getElementById("long").innerHTML = "Longitud: " + lon;
+                document.getElementById("latitud").innerHTML = "Latitud: " + lat;
+                document.getElementById("link").href = link;
+            }
 
-	document.getElementById("link").href = link;
-        
-        
-}
-
-
-function ViewError (error) {
-	alert(error.code);
-}
-	</script>
-
+            function ViewError(error) {
+                alert(error.code);
+            }
+        </script>
 
         <style type="text/css">
             #listaEmpleados table tr td {
                 padding-left: 5px;
                 padding-right: 0px;
             }
-        
         </style>
-       
+
     </head>
     <body class="fixed-left">
         <!-- Modal Start -->
@@ -304,22 +296,19 @@ function ViewError (error) {
                                             foreach ($usuario as $cookval):
                                                 $img = $cookval->Foto_perfil;
                                                 ?>
-                                                
-
-                                        <?php if($img == ""): ?>
-                                             <span class="rounded-image topbar-profile-image">
-                       <img src="<?php echo base_url()?>img/usershadow.png">
-                        </span> <strong> <?php echo $cookval->username; ?> </strong> <!--i class="fa fa-caret-down"></i-->
-                   <?php else: ?>
-                    <span class="rounded-image topbar-profile-image">
-                    <img src="<?php echo base_url() . 'img/cargas/' . $img; ?>">
-                    </span> <strong> <?php echo $cookval->username; ?> </strong> <!--i class="fa fa-caret-down"></i-->
-                      <?php
-            endif;
-                        endforeach;
-                    endif;
-                    ?>
-
+                                                <?php if ($img == ""): ?>
+                                                    <span class="rounded-image topbar-profile-image">
+                                                        <img src="<?php echo base_url() ?>img/usershadow.png">
+                                                    </span> <strong> <?php echo $cookval->username; ?> </strong> <!--i class="fa fa-caret-down"></i-->
+                                                <?php else: ?>
+                                                    <span class="rounded-image topbar-profile-image">
+                                                        <img src="<?php echo base_url() . 'img/cargas/' . $img; ?>">
+                                                    </span> <strong> <?php echo $cookval->username; ?> </strong> <!--i class="fa fa-caret-down"></i-->
+                                                <?php
+                                                endif;
+                                            endforeach;
+                                        endif;
+                                        ?>
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li><a href="#">My Profile</a></li>

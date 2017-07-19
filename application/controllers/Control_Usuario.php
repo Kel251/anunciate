@@ -615,6 +615,23 @@ class Control_Usuario extends CI_Controller {
             }
         }
     }
+    
+    public function follow() {
+        $id = $this->tank_auth->get_user_id();
+        if ($this->input->is_ajax_request()) {
+            $comentario = $this->input->post('comentario');
+            $id_anun = $this->input->post('idanuncio');
+            if ($this->Model_Usuario->postcomment($comentario, $id_anun, $id)) {
+                //echo "bien!";
+                $id_anun = FALSE;
+                return TRUE;
+            } else {
+                echo "Tienes que iniciar sesion o registrarte para poder comentar.";
+                $id_anun = FALSE;
+                return FALSE;
+            }
+        }
+    }
 
     //marcadores
     public function markers() {

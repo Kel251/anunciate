@@ -92,7 +92,7 @@
                 var registros = eval(respuesta);
                 html = "<ul class='img-comment-list'>";
                 for (var i = 0; i < registros.length; i++) {
-                    html += "<li><div class='comment-img'><img src='<?php echo base_url() ?>img/cargas/" + registros[i]['fotop'] + "'/></div><div class='comment-text'><strong><a href='#'>" + registros[i]["nickname"] + "</a></strong><div id='txtcoment'><p>" + registros[i]["coment"] + "</p></div></div></li>";
+                    html += "<li><div class='comment-img'><img src='<?php echo base_url() ?>img/cargas/" + registros[i]['fotop'] + "'/></div><div class='comment-text'><strong><a href='#'>" + registros[i]["nickname"] + "</a></strong><div class='txtcoment'>" + registros[i]["coment"] + "</div></div></li>";
                 }
                 ;
                 html += "</ul>";
@@ -127,42 +127,54 @@
 //            }
 //        });
 //    }
-    
+
 </script>
 <script>
     $(document).ready(function () {
         $("body").on("click", "article .panel-body a", function (event) {
             event.preventDefault();
-            
+
             ids = $(this).attr("href");
             //alert('funciona'+ids);
-            $("#fcomentario").submit(function (event) {              
-                event.preventDefault();
-                comment = $("#comment").val();
-                
-                if (comment !== "")
-                {
-                    $.ajax({
-                        url: "<?php echo base_url() . 'Control_Usuario/postcomentario' ?>",
-                        type: "POST",
-                        data: {comentario: comment, idanuncio: ids},
-                        success: function (resp) {
-                            $("#comment").val('');
-                            if(resp === "Tienes que iniciar sesion o registrarte para poder comentar."){
-                            swal(resp, "", "info");
-                        }
-                            showcomments(ids);
-                            
-                    //$('#fcomentario')[0].reset();
-
-                        }
-                    });
-                } else {
-                    swal("Tienes que agregar texto a tu comentario.", "", "info");
+            //$("#fcomentario").submit(function (event) {
+            //  event.preventDefault();
+            $("#textoforcoment").keyup(function (event) {
+                if (event.keyCode === 13) {
+                    //comment = $("#textoforcoment").val();
+                    comment = document.getElementById("textoforcoment").innerHTML;  
+                    if (comment !== "")
+                    {
+                        $.ajax({
+                            url: "<?php echo base_url() . 'Control_Usuario/postcomentario' ?>",
+                            type: "POST",
+                            data: {comentario: comment, idanuncio: ids},
+                            success: function (resp) {
+                                document.getElementById("textoforcoment").innerHTML = '';
+                                if (resp === "Tienes que iniciar sesion o registrarte para poder comentar.") {
+                                    swal(resp, "", "info");
+                                }
+                                showcomments(ids);
+                                //$('#fcomentario')[0].reset();
+                            }
+                        });
+                    } else {
+                        swal("Tienes que agregar texto a tu comentario.", "", "info");
 //                    swal("Good job!", "", "info");
+                        return FALSE;
+                    }
+                    //alert('You pressed enter!');
                     return FALSE;
-                }return FALSE;
+                }
             });
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#comment").keyup(function (event) {
+            if (event.keyCode === 13) {
+                alert('You pressed enter!');
+            }
         });
     });
 </script>
@@ -174,7 +186,7 @@
             <table class="table table-responsive " id="mod"> 
                 <tr>
                     <td style="width: 100px;">
-                        <img src="<?php echo base_url().'img/logotipo7c.png' ?>">
+                        <img src="<?php echo base_url() . 'img/logotipo7c.png' ?>">
                     </td>
                     <td>
                         Información <br>
@@ -200,6 +212,6 @@
                 </tr>
             </table>
         </div>
-        
+
     </footer>
 </div>

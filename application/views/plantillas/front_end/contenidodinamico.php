@@ -26,7 +26,7 @@
     <div class="col-xs-12 col-sm-12 col-lg-12">        
         <a href="#" title="ver más" data-original-title="apagado"><h4><span class="glyphicon glyphicon-star-empty"></span> Recomendados</h4></a>
         <button class="btn btn-xs btn-notify">Recibir notificaciones</button>
-  
+
         <div class="slider5 col-xs-12 col-sm-12 col-lg-12">
             <?php if (isset($contenido)): foreach ($contenido as $value):
                     ?>
@@ -291,10 +291,11 @@
                                 </ul>
                             </div>
                             <div class="modal-meta-bottom">
-                                <form id="fcomentario">
-                                    <textarea id="comment" type="text" class="form-control" name="comentario" placeholder="Escribir comentario...."></textarea>
-                                    <input type="reset" value="Cancelar"><input type="submit" value="Comentar">
-                                </form>
+
+                                <div id="contenedorforcoment">
+                                    <div id="textoforcoment" contenteditable="true"></div>
+                                </div>
+
                             </div>
                         </div>
                     </div>

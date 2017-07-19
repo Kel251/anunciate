@@ -1,7 +1,4 @@
-
 <!-- Left Sidebar Start -->
-
-
 <div class="left side-menu">
     <div class="sidebar-inner slimscrollleft">
         <!-- Search form -->
@@ -23,410 +20,408 @@
                             <?php
                             $img = $cookval->Foto_perfil;
                             ?>
-                           <?php if($img == ""): ?>
-                       <img src="<?php echo base_url()?>img/usershadow.png">
-                         </a>
+                            <?php if ($img == ""): ?>
+                                <img src="<?php echo base_url() ?>img/usershadow.png">
+                            </a>
+                        </div>
+                        <div class="col-xs-8">
+                            <div class="profile-text">Bienvenido <b><?php echo $cookval->username; ?></b>
+                            <?php else: ?>
+                                <img src="<?php echo base_url() . 'img/cargas/' . $img; ?>">
+                                </a>
+                            </div>
+                            <div class="col-xs-8">
+                                <div class="profile-text">Bienvenido <b><?php echo $cookval->username; ?></b>
+                                <?php
+                                endif;
+                            endforeach;
+                        endif;
+                        ?>
                     </div>
-                    <div class="col-xs-8">
-                        <div class="profile-text">Bienvenido 
-                            <b>
-                             <?php echo $cookval->username; ?>
-                   <?php else: ?>
-                    <img src="<?php echo base_url() . 'img/cargas/' . $img; ?>">
-                        </a>
+                    <div class="profile-buttons">
+                        <a href="javascript:;"><i class="fa fa-envelope-o pulse"></i></a>
+                        <a href="#connect" class="open-right"><i class="fa fa-comments"></i></a>
+                        <!--a href="javascript:void(0)" id="cerrar" title="Sign Out"-->
+                        <a href="<?= base_url() ?>auth/logout" title="Salir">
+                            <i class="fa fa-power-off text-red-1"></i>
+                        </a><!--href="javascript:;"-->
                     </div>
-                    <div class="col-xs-8">
-                        <div class="profile-text">Bienvenido 
-                            <b>
-                                <?php echo $cookval->username; ?>
-                            <?php endif;  endforeach; ?>
-                        <?php endif; ?>
-                    </b>
-                </div>
-                <div class="profile-buttons">
-                    <a href="javascript:;"><i class="fa fa-envelope-o pulse"></i></a>
-                    <a href="#connect" class="open-right"><i class="fa fa-comments"></i></a>
-                    <!--a href="javascript:void(0)" id="cerrar" title="Sign Out"-->
-                    <a href="<?= base_url() ?>auth/logout" title="Sign Out">
-                        <i class="fa fa-power-off text-red-1"></i>
-                    </a><!--href="javascript:;"-->
                 </div>
             </div>
-        </div>
-        <!--- Divider -->
-        <div class="clearfix"></div>
-        <hr class="divider" />
-        <div class="clearfix"></div>
-        <!--- Divider -->
-        <div id="sidebar-menu">
-            <ul>
-                <li >
-                    
-                        <a href='<?php echo base_url('Control_Dashuser') ?>'>
-                        <i class='icon-home-3'></i>
-                        
-                        <span>Dashboard</span> 
-                        
-                        <span class="pull-right">
-                            <i class="fa fa-angle-down"></i>
-                        </span></a>
-                    
-                    <!--<ul>
-                        <li>
-                            <a href='index.html'>
-                                <span>Dashboard v1</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='index2.html'>
-                                <span>Dashboard v2</span>
-                            </a>
-                        </li>
-                    </ul>-->
-                </li>
-                <!--                            <li class='has_sub'>
-                                                <a href='javascript:void(0);'>
-                                                    <i class='icon-feather'></i>
-                                                    <span>UI Elements</span> 
-                                                    <span class="pull-right">
-                                                        <i class="fa fa-angle-down"></i></span>
-                                                </a>
-                                                <ul>
-                                                    <li>
-                                                        <a href='alerts.html'>
-                                                            <span>Alerts</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href='buttons.html'>
-                                                            <span>Buttons</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href='calendar.html'>
-                                                            <span>Calendar</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href='grid.html'>
-                                                            <span>Grid</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href='icons.html'>
-                                                            <span>Icons</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href='modals.html'>
-                                                            <span>Modals</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href='nested-list.html'>
-                                                            <span>Nested List</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href='notifications.html'>
-                                                            <span>Notifications</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href='portlets.html'>
-                                                            <span>Portlets</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href='progress-bars.html'>
-                                                            <span>Progress Bars</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href='tabs-accordions.html'>
-                                                            <span>Tabs & Accordions</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href='typography.html'>
-                                                            <span>Typography</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>-->
-                <li class='has_sub'>
-                    <!--<a href='javascript:void(0);'>-->
-                    <a href="#">
-                        <i class='icon-pencil-3'></i>
-                        <span>Consultas</span>
-                        <span class="pull-right">
-                            <i class="fa fa-angle-down"></i>
-                        </span>
-                    </a>
-                    <ul>
-                        <li>
-                            <a href='<?php echo base_url('Control_Dashuser/categorias') ?>'>
-                                <span>Categorías y subcategorías disponibles</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='<?php echo base_url('Control_Dashuser/estados') ?>'>
-                                <span>Estados disponibles</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='<?php echo base_url('Control_Dashuser/municipios') ?>'>
-                                <span>Municipios disponibles</span>
-                            </a>
-                        </li>
-                        <!--li>
-                            <a href='?php echo base_url('Control_Dashuser/subcategorias') ?>'>
-                                <span>Consuta Subcategorias</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='?php echo base_url('Control_Dashuser/usuarios') ?>'>
-                                <span>Consuta Usuarios</span>
-                            </a>
-                        </li>
-                        <!-- <li>
-                             <a href='form-validation.html'>
-                                 <span>Form Validation</span>
-                             </a>
-                         </li>
-                         <li>
-                             <a href='form-uploads.html'>
-                                 <span>File Uploads</span>
-                             </a>
-                         </li>-->
-                    </ul>
-                </li>
-                <li class='has_sub'>
-                    <!--<a href='javascript:void(0);'>-->
-                    <a>
-                        <i class='fa fa-table'></i>
-                        <span>Anuncios</span>
-                        <span class="pull-right">
-                            <i class="fa fa-angle-down"></i>
-                        </span>
-                    </a>
-                    <ul>
-                        <li>
-                            <a href='<?php echo base_url('Control_Dashuser/Anunciate') ?>'>
-                                <span>Anunciate</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='<?php echo base_url('Control_Dashuser/Edita') ?>'>
-                                <span>Edita tu anuncio</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <!--li class='has_sub'>
-                    <a href='#'><!--href='javascript:void(0);'--
-                        <i class='glyphicon glyphicon-cog'></i>
-                        <span>Configurar cuenta</span> 
-                        <span class="pull-right">
-                            <i class="fa fa-angle-down"></i>
-                        </span>
-                    </a>
-                    <ul>
-                        <li>
-                            <a href='<?php echo base_url('Control_Dashuser/perfil') ?>'>
-                                <span>Datos del Perfil</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='<?php echo base_url('Control_Dashuser/anunciosrapido') ?>'>
-                                <span>Datos del Anuncio rápido!</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <!--<li class='has_sub'>
-                    <a href='javascript:void(0);'>
-                        <i class='fa fa-map-marker'>
-
-                        </i>
-                        <span>Maps</span>
-                        <span class="pull-right">
-                            <i class="fa fa-angle-down"></i>
-                        </span>
-                    </a>
-                    <ul>
-                        <li>
-                            <a href='google-maps.html'>
-                                <span>Google Maps</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='vector-maps.html'>
-                                <span>Vector Maps</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>-->
-                <!--<li class='has_sub'>
-                    <a href='javascript:void(0);'>
-                        <i class='fa fa-envelope'></i>
-                        <span>Email</span>
-                        <span class="pull-right">
-                            <i class="fa fa-angle-down"></i>
-                        </span>
-                    </a>
-                    <ul>
-                        <li>
-                            <a href='inbox.html'>
-                                <span>Inbox</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='read-message.html'>
-                                <span>View Email</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='new-message.html'>
-                                <span>New Message</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>-->
-                <!--<li class='has_sub'>
-                    <a href='javascript:void(0);'>
-                        <i class='icon-chart-line'></i>
-                        <span>Charts</span>
-                        <span class="pull-right">
-                            <i class="fa fa-angle-down"></i>
-                        </span>
-                    </a>
-                    <ul>
-                        <li>
-                            <a href='sparkline-charts.html'>
-                                <span>Sparkline Charts</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='morris-charts.html'>
-                                <span>Morris Charts</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='rickshaw-charts.html'>
-                                <span>Rickshaw Charts</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='other-charts.html'>
-                                <span>Other Charts</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>-->
-                <!--<li class='has_sub'>
-                    <a href='javascript:void(0);'>
-                        <i class='icon-megaphone'></i>
-                        <span>Extras</span> 
-                        <span class="pull-right">
-                            <i class="fa fa-angle-down"></i>
-                        </span>
-                    </a>
-                    <ul>
-                        <li>
-                            <a href='blank.html'>
-                                <span>Blank Page</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='login.html'>
-                                <span>Login</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='register.html'>
-                                <span>Register</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='lockscreen.html'>
-                                <span>Lock Screen</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='404.html'>
-                                <span>404 Error</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='500.html'>
-                                <span>500 Error</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='profile.html' class='active'>
-                                <span>User Profile</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='invoice.html'><span>Invoice</span></a>
-                        </li>
-                        <li>
-                            <a href='gallery.html'><span>Gallery</span></a>
-                        </li>
-                        <li>
-                            <a href='maintenance.html'><span>Maintenance</span></a>
-                        </li>
-                        <li class='has_sub'>
-                            <a href='javascript:void(0);'><span>3 Level menu</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span></a>
-                            <ul>
-                                <li>
-                                    <a href='javascript:void(0);'><span>Sub Item</span></a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class='has_sub'>
-                            <a href='javascript:void(0);'><span>4 Level Menu</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span></a>
-                            <ul>
-                                <li class='has_sub'>
-                                    <a href='javascript:void(0);'><span>Sub Item - level 3</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span></a>
-                                    <ul>
-                                        <li>
-                                            <a href='javascript:void(0);'><span>Sub Item - level 4</span></a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class='has_sub'>
-                            <a href='javascript:void(0);'><span>Submenu with icons</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span></a>
-                            <ul>
-                                <li>
-                                    <a href='javascript:void(0);'><i class='fa fa-camera'></i><span>Item with icon</span></a>
-                                </li>
-                                <li>
-                                    <a href='javascript:void(0);'><i class='entypo entypo-users'></i><span>Another Item</span></a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>-->
-            </ul>    
+            <!--- Divider -->
             <div class="clearfix"></div>
-        </div>
-        <div class="clearfix"></div>
-        <!--div class="portlets">
-            <div id="chat_groups" class="widget transparent nomargin">
-                <h2>Chat Groups</h2>
-                <div class="widget-content">
-                    <ul class="list-unstyled">
-                        <li><a href="javascript:;"><i class="fa fa-circle-o text-red-1"></i> Colleagues</a></li>
-                        <li><a href="javascript:;"><i class="fa fa-circle-o text-blue-1"></i> Family</a></li>
-                        <li><a href="javascript:;"><i class="fa fa-circle-o text-green-1"></i> Friends</a></li>
-                    </ul>
-                </div>
-            </div>
+            <hr class="divider" />
+            <div class="clearfix"></div>
+            <!--- Divider -->
+            <div id="sidebar-menu">
+                <ul>
+                    <li >
 
+                        <a href='<?php echo base_url('Control_Dashuser') ?>'>
+                            <i class='icon-home-3'></i>
+
+                            <span>Dashboard</span> 
+
+                            <span class="pull-right">
+                                <i class="fa fa-angle-down"></i>
+                            </span></a>
+
+                        <!--<ul>
+                            <li>
+                                <a href='index.html'>
+                                    <span>Dashboard v1</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='index2.html'>
+                                    <span>Dashboard v2</span>
+                                </a>
+                            </li>
+                        </ul>-->
+                    </li>
+                    <!--                            <li class='has_sub'>
+                                                    <a href='javascript:void(0);'>
+                                                        <i class='icon-feather'></i>
+                                                        <span>UI Elements</span> 
+                                                        <span class="pull-right">
+                                                            <i class="fa fa-angle-down"></i></span>
+                                                    </a>
+                                                    <ul>
+                                                        <li>
+                                                            <a href='alerts.html'>
+                                                                <span>Alerts</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href='buttons.html'>
+                                                                <span>Buttons</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href='calendar.html'>
+                                                                <span>Calendar</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href='grid.html'>
+                                                                <span>Grid</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href='icons.html'>
+                                                                <span>Icons</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href='modals.html'>
+                                                                <span>Modals</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href='nested-list.html'>
+                                                                <span>Nested List</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href='notifications.html'>
+                                                                <span>Notifications</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href='portlets.html'>
+                                                                <span>Portlets</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href='progress-bars.html'>
+                                                                <span>Progress Bars</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href='tabs-accordions.html'>
+                                                                <span>Tabs & Accordions</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href='typography.html'>
+                                                                <span>Typography</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>-->
+                    <li class='has_sub'>
+                        <!--<a href='javascript:void(0);'>-->
+                        <a href="#">
+                            <i class='icon-pencil-3'></i>
+                            <span>Consultas</span>
+                            <span class="pull-right">
+                                <i class="fa fa-angle-down"></i>
+                            </span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href='<?php echo base_url('Control_Dashuser/categorias') ?>'>
+                                    <span>Categorías y subcategorías disponibles</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='<?php echo base_url('Control_Dashuser/estados') ?>'>
+                                    <span>Estados disponibles</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='<?php echo base_url('Control_Dashuser/municipios') ?>'>
+                                    <span>Municipios disponibles</span>
+                                </a>
+                            </li>
+                            <!--li>
+                                <a href='?php echo base_url('Control_Dashuser/subcategorias') ?>'>
+                                    <span>Consuta Subcategorias</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='?php echo base_url('Control_Dashuser/usuarios') ?>'>
+                                    <span>Consuta Usuarios</span>
+                                </a>
+                            </li>
+                            <!-- <li>
+                                 <a href='form-validation.html'>
+                                     <span>Form Validation</span>
+                                 </a>
+                             </li>
+                             <li>
+                                 <a href='form-uploads.html'>
+                                     <span>File Uploads</span>
+                                 </a>
+                             </li>-->
+                        </ul>
+                    </li>
+                    <li class='has_sub'>
+                        <!--<a href='javascript:void(0);'>-->
+                        <a>
+                            <i class='fa fa-table'></i>
+                            <span>Anuncios</span>
+                            <span class="pull-right">
+                                <i class="fa fa-angle-down"></i>
+                            </span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href='<?php echo base_url('Control_Dashuser/Anunciate') ?>'>
+                                    <span>Anunciate</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='<?php echo base_url('Control_Dashuser/Edita') ?>'>
+                                    <span>Edita tu anuncio</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--li class='has_sub'>
+                        <a href='#'><!--href='javascript:void(0);'--
+                            <i class='glyphicon glyphicon-cog'></i>
+                            <span>Configurar cuenta</span> 
+                            <span class="pull-right">
+                                <i class="fa fa-angle-down"></i>
+                            </span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href='<?php echo base_url('Control_Dashuser/perfil') ?>'>
+                                    <span>Datos del Perfil</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='<?php echo base_url('Control_Dashuser/anunciosrapido') ?>'>
+                                    <span>Datos del Anuncio rápido!</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--<li class='has_sub'>
+                        <a href='javascript:void(0);'>
+                            <i class='fa fa-map-marker'>
+    
+                            </i>
+                            <span>Maps</span>
+                            <span class="pull-right">
+                                <i class="fa fa-angle-down"></i>
+                            </span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href='google-maps.html'>
+                                    <span>Google Maps</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='vector-maps.html'>
+                                    <span>Vector Maps</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>-->
+                    <!--<li class='has_sub'>
+                        <a href='javascript:void(0);'>
+                            <i class='fa fa-envelope'></i>
+                            <span>Email</span>
+                            <span class="pull-right">
+                                <i class="fa fa-angle-down"></i>
+                            </span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href='inbox.html'>
+                                    <span>Inbox</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='read-message.html'>
+                                    <span>View Email</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='new-message.html'>
+                                    <span>New Message</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>-->
+                    <!--<li class='has_sub'>
+                        <a href='javascript:void(0);'>
+                            <i class='icon-chart-line'></i>
+                            <span>Charts</span>
+                            <span class="pull-right">
+                                <i class="fa fa-angle-down"></i>
+                            </span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href='sparkline-charts.html'>
+                                    <span>Sparkline Charts</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='morris-charts.html'>
+                                    <span>Morris Charts</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='rickshaw-charts.html'>
+                                    <span>Rickshaw Charts</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='other-charts.html'>
+                                    <span>Other Charts</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>-->
+                    <!--<li class='has_sub'>
+                        <a href='javascript:void(0);'>
+                            <i class='icon-megaphone'></i>
+                            <span>Extras</span> 
+                            <span class="pull-right">
+                                <i class="fa fa-angle-down"></i>
+                            </span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href='blank.html'>
+                                    <span>Blank Page</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='login.html'>
+                                    <span>Login</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='register.html'>
+                                    <span>Register</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='lockscreen.html'>
+                                    <span>Lock Screen</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='404.html'>
+                                    <span>404 Error</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='500.html'>
+                                    <span>500 Error</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='profile.html' class='active'>
+                                    <span>User Profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='invoice.html'><span>Invoice</span></a>
+                            </li>
+                            <li>
+                                <a href='gallery.html'><span>Gallery</span></a>
+                            </li>
+                            <li>
+                                <a href='maintenance.html'><span>Maintenance</span></a>
+                            </li>
+                            <li class='has_sub'>
+                                <a href='javascript:void(0);'><span>3 Level menu</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span></a>
+                                <ul>
+                                    <li>
+                                        <a href='javascript:void(0);'><span>Sub Item</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class='has_sub'>
+                                <a href='javascript:void(0);'><span>4 Level Menu</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span></a>
+                                <ul>
+                                    <li class='has_sub'>
+                                        <a href='javascript:void(0);'><span>Sub Item - level 3</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span></a>
+                                        <ul>
+                                            <li>
+                                                <a href='javascript:void(0);'><span>Sub Item - level 4</span></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class='has_sub'>
+                                <a href='javascript:void(0);'><span>Submenu with icons</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span></a>
+                                <ul>
+                                    <li>
+                                        <a href='javascript:void(0);'><i class='fa fa-camera'></i><span>Item with icon</span></a>
+                                    </li>
+                                    <li>
+                                        <a href='javascript:void(0);'><i class='entypo entypo-users'></i><span>Another Item</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>-->
+                </ul>    
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+            <!--div class="portlets">
+                <div id="chat_groups" class="widget transparent nomargin">
+                    <h2>Chat Groups</h2>
+                    <div class="widget-content">
+                        <ul class="list-unstyled">
+                            <li><a href="javascript:;"><i class="fa fa-circle-o text-red-1"></i> Colleagues</a></li>
+                            <li><a href="javascript:;"><i class="fa fa-circle-o text-blue-1"></i> Family</a></li>
+                            <li><a href="javascript:;"><i class="fa fa-circle-o text-green-1"></i> Friends</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
             <!--<div id="recent_tickets" class="widget transparent nomargin">
                 <h2>Recent Tickets</h2>
                 <div class="widget-content">
@@ -656,4 +651,4 @@
 </div>
 <!-- Right Sidebar End -->	
 
-<script src="<?php echo base_url(); ?>js/login.js"></script>
+<!--<script src="?php echo base_url(); ?>js/login.js"></script>-->
